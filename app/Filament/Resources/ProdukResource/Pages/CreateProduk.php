@@ -9,4 +9,9 @@ use Filament\Resources\Pages\CreateRecord;
 class CreateProduk extends CreateRecord
 {
     protected static string $resource = ProdukResource::class;
+
+    public static function canCreateAnother(): bool 
+    {
+        return false;
+    }
 }
